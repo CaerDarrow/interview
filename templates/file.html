@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if processed_filename %}
+<h1> {{processed_filename}} was processed!</h1>
+{% endif %}
+<form action="" method="post" enctype="multipart/form-data">
+    <label for="file">File</label>
+    <p><input id="file" name="csv" type="file" accept=".csv">
+    <p><button type="submit">Process File</button>
+</form>
+</body>
+</html>
